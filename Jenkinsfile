@@ -19,7 +19,7 @@ pipeline{
     }
      stage("run"){
       steps{
-        sh "docker run -d --name backend-container -p 5173:5173 backend"
+        sh "docker run -d --name backend-container -p 8000:8000 backend"
       }
     }
   }
